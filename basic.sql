@@ -134,7 +134,7 @@ SELECT grade, COUNT(*) FROM students
 GROUP BY grade;
 ```
 
-### NoSQL Introduction
+### NoSQL Introduction:
 NoSQL (Not Only SQL) databases provide a mechanism for storing and retrieving data that is modeled in non-tabular forms. They are particularly useful for unstructured or semi-structured data and for applications requiring high scalability.
 
 #### Types of NoSQL Databases
