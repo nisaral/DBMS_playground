@@ -49,3 +49,26 @@ The SQL syntax for each relational database software package is slightly differe
 The following data types are supported in most relational databases ([source](https://www.journaldev.com)):
 
 <img src="https://i.imgur.com/DkPrZq0.png" width="640">
+
+## Working with Tables
+
+
+Let's create the tables for the Classic Models database according to the given Entity Relationship Diagram. We will also insert some data along the way.
+
+* Tables in a database can be listed using the `SHOW TABLES` statement
+* Tables are created using the `CREATE TABLE` statement
+* Tables are deleted using the `DROP TABLE` statement
+* You can view the structure of a table using the `DESCRIBE` statement
+* Data can be inserted into a table using the `INSERT INTO` statement
+
+While creating tables, we specify a list of columns and the data type for each column. 
+
+```
+CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    column3 datatype,
+   ....
+);
+```
+
