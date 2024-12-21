@@ -43,3 +43,9 @@ Some quick notes on the SQL syntax:
 - The statements in this tutorial can be executed on the MySQL command line or the workbench
 
 The SQL syntax for each relational database software package is slightly different. Check the official documentation of your DB for details.
+
+### SQL Data Types
+
+The following data types are supported in most relational databases ([source](https://www.journaldev.com)):
+
+<img src="https://i.imgur.com/DkPrZq0.png" width="640">
