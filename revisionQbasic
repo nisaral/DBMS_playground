@@ -1,0 +1,31 @@
+## Revision Questions
+1.	What are Relational databases?
+2.	What are the properties of relational databases?
+3.	What is an ERD?
+4.	What are few relational databases software packages?
+5.	What is SQL?
+6.	What are SQL statements?
+7.	How to list all the available databases?
+8.	What is the syntax to create a new database?
+9.	How to select a database to in order to use it?
+10.	What is the syntax to delete a database?
+11.	What is the syntax to rename an existing database?
+12.	What is the syntax to check if a database exists or not?
+13.	How to view structure of a table?
+14.	What are the different SQL data types?
+15.	What is a <code>PRIMARY KEY</code>? What are the properties of a <code>PRIMARY KEY</code>?
+16.	What is a <code>FOREIGN KEY</code>?
+17.	What is <code>REFERENCES</code> clause in SQL?
+18.	What is a <code>CONSTRAINT</code> in SQL?
+19.	How to view data in a table?
+20.	How to add new rows of data in SQL?
+21.	What operators does <code>WHERE</code> clause support?
+22.	How to combine expressions within a <code>WHERE</code> clause?
+23.	What does <code>ORDERY BY</code> clause do in SQL?
+24.	What does <code>LIMIT</code> clause do SQL?
+25.	How to modify a table structure?
+26.	How to change data type of a column?
+27.	How to add new column to the table?
+28.	How to rename a column in SQL?
+29.	How to import data into SQL database?
+30.	How to export data from SQL database?
