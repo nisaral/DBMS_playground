@@ -14,6 +14,8 @@ Here's what a table in a relational database looks like:
 
 <img src="https://i.imgur.com/dUDclY0.png" width="400">
 
+SQL tutorial-https://www.w3schools.com/sql/default.asp
+
 
 ### SQL Statements and Syntax
 
