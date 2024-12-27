@@ -63,15 +63,11 @@ Let's create the tables for the Classic Models database according to the given E
 * You can view the structure of a table using the `DESCRIBE` statement
 * Data can be inserted into a table using the `INSERT INTO` statement
 
-While creating tables, we specify a list of columns and the data type for each column. 
 
-```
-CREATE TABLE table_name (
-    column1 datatype,
-    column2 datatype,
-    column3 datatype,
-   ....
-);
 SQL joins are essential for analyzing complex datasets and extracting meaningful insights-
 ![image](https://github.com/user-attachments/assets/f5cc0b62-fc01-4ca9-b6d3-64cb587bf93f)
+
+
+
+
 
