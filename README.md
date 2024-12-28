@@ -19,7 +19,7 @@ SQL tutorial-https://www.w3schools.com/sql/default.asp
 
 ### SQL Statements and Syntax
 
-There are three types of SQL statements:
+There are three types of SQL statements-
 
 **1. Data Definition Language(DDL):**
 The Data Definition Language contains commands that are less frequently used. DDL commands modify the actual structure of a database, rather than the database’s contents. example:
