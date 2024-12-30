@@ -63,6 +63,10 @@ Let's create the tables for the Classic Models database according to the given E
 * You can view the structure of a table using the `DESCRIBE` statement
 * Data can be inserted into a table using the `INSERT INTO` statement
 
+SQL cheatsheet:
+![image](https://learnsql.com/blog/sql-basics-cheat-sheet/sql-basics-cheat-sheet-a4-page-1.webp)
+![image](https://learnsql.com/blog/sql-basics-cheat-sheet/sql-basics-cheat-sheet-a4-page-2.webp)
+
 
 SQL joins are essential for analyzing complex datasets and extracting meaningful insights-
 ![image](https://github.com/user-attachments/assets/f5cc0b62-fc01-4ca9-b6d3-64cb587bf93f)
