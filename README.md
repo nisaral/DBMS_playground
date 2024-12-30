@@ -54,9 +54,6 @@ The following data types are supported in most relational databases ([source](ht
 
 ## Working with Tables
 
-
-Let's create the tables for the Classic Models database according to the given Entity Relationship Diagram. We will also insert some data along the way.
-
 * Tables in a database can be listed using the `SHOW TABLES` statement
 * Tables are created using the `CREATE TABLE` statement
 * Tables are deleted using the `DROP TABLE` statement
