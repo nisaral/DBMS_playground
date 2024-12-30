@@ -34,7 +34,7 @@ The Data Control Language allows you to manipulate and manage user access rights
 These two commands form the core of the relational database security model.
 
 **3. Data Manipulation Language (DML):**
-Data Manipulation Language contains the subset of SQL commands used most frequently. It is used for searching, inserting, updating, and deleting data that we will see in this notebook.
+Data Manipulation Language contains the subset of SQL commands used most frequently. It is used for searching, inserting, updating, and deleting data 
 
 
 Some quick notes on the SQL syntax:
@@ -42,7 +42,7 @@ Some quick notes on the SQL syntax:
 - SQL is case insensitive. You can type statements in upper case, lowercase or a mixture of both
 - Database names can be typed with or without backquotes i.e. `classicmodels` or `` `classicmodels` ``
 - SQL statement can span over multiple lines and must end with a semicolon `;`
-- The statements in this tutorial can be executed on the MySQL command line or the workbench
+- 
 
 The SQL syntax for each relational database software package is slightly different. Check the official documentation of your DB for details.
 
