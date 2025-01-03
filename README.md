@@ -10,7 +10,7 @@ There are many ways of storing data on a computer (text files, JSON files, CSV f
 5. Information can be retrieved from the database using the Structured Query Language (SQL)
 6. Databases can be hosted locally (on your computer) or on the cloud, for distributed access.
 
-Here's what a table in a relational database looks like:
+Here's what a table in a relational database looks like
 
 <img src="https://i.imgur.com/dUDclY0.png" width="400">
 
