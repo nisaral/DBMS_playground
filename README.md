@@ -25,6 +25,19 @@ There are three types of SQL statements-
 The Data Definition Language contains commands that are less frequently used. DDL commands modify the actual structure of a database, rather than the database’s contents. example:
 - Generating a table
 - Modifying a structure of a table (altering)
+- CREATE: Creates a new table, database, or index.
+
+CREATE TABLE Employees (
+    ID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    Age INT
+);
+
+ALTER: Modifies an existing database object.
+
+ALTER TABLE Employees ADD COLUMN Salary INT;
+
+DROP: Deletes a table or database.
 
 **2. Data Control Language(DCL):**
 The Data Control Language allows you to manipulate and manage user access rights on database objects. It consists of two commands: 
@@ -35,6 +48,23 @@ These two commands form the core of the relational database security model.
 
 **3. Data Manipulation Language (DML):**
 Data Manipulation Language contains the subset of SQL commands used most frequently. It is used for searching, inserting, updating, and deleting data 
+INSERT: Adds new data to a table.
+
+INSERT INTO Employees (ID, Name, Age) VALUES (1, 'Alice', 30);
+
+UPDATE: Modifies existing data.
+
+UPDATE Employees SET Age = 31 WHERE ID = 1;
+
+DELETE: Removes data.
+**4.Transcation Control Language(TCL):**
+These commands manage transactions.
+COMMIT: Saves changes.
+COMMIT;
+ROLLBACK: Reverts changes.
+ROLLBACK;
+SAVEPOINT: Sets a save point
+
 
 
 Some quick notes on the SQL syntax:
