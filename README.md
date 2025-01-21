@@ -22,7 +22,8 @@ SQL tutorial-https://www.w3schools.com/sql/default.asp
 There are three types of SQL statements-
 
 **1. Data Definition Language(DDL):**
-The Data Definition Language contains commands that are less frequently used. DDL commands modify the actual structure of a database, rather than the database’s contents. example:
+DDL commands modify the actual structure of a database, rather than the database’s contents. 
+example:
 - Generating a table
 - Modifying a structure of a table (altering)
 - CREATE: Creates a new table, database, or index.
