@@ -3,7 +3,7 @@
 ### Introduction to SQL
 SQL (Structured Query Language) is a standard programming language specifically designed for managing and manipulating relational databases. It allows you to create, read, update, and delete data in a database, commonly referred to as CRUD operations.
 
-### Basic SQL Commands
+### Basic SQL Commandsss
 
 #### 1. Creating a Database
 ```sql
