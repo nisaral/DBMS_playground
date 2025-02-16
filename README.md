@@ -99,6 +99,6 @@ SQL joins are essential for analyzing complex datasets and extracting meaningful
 ![image](https://github.com/user-attachments/assets/f5cc0b62-fc01-4ca9-b6d3-64cb587bf93f)
 
 
-
+SQLite
 
 
