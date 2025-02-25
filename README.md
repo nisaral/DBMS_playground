@@ -76,7 +76,7 @@ Some quick notes on the SQL syntax:
 
 The SQL syntax for each relational database software package is slightly different. Check the official documentation of your DB for details.
 
-### SQL Data Types
+### SQL Data Type
 
 The following data types are supported in most relational databases ([source](https://www.journaldev.com)):
 
