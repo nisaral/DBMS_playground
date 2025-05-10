@@ -1,0 +1,101 @@
+-- DBMS Practical Exam Cheat Sheet (CLI-based using 'school' database)
+
+-- Step 0: Choose the Database
+CREATE DATABASE school;
+USE school;
+
+-- 1. ER Diagram Example Question:
+-- Problem: Design an ER diagram for a Library Management System with Students, Books, and Issue details.
+-- Entities: Student, Book, Issue
+-- Relationships: Student-Issue (1:N), Book-Issue (1:N)
+
+-- 2. ER to Relational Schema Mapping:
+-- Student(SID PRIMARY KEY, Name, Department)
+-- Book(BID PRIMARY KEY, Title, Author)
+-- Issue(IID PRIMARY KEY, SID FOREIGN KEY, BID FOREIGN KEY, IssueDate)
+
+-- 3. DDL and DML with Integrity Constraints:
+CREATE TABLE Student (
+    SID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    Department VARCHAR(50)
+);
+
+CREATE TABLE Book (
+    BID INT PRIMARY KEY,
+    Title VARCHAR(100),
+    Author VARCHAR(100)
+);
+
+CREATE TABLE Issue (
+    IID INT PRIMARY KEY,
+    SID INT,
+    BID INT,
+    IssueDate DATE,
+    FOREIGN KEY (SID) REFERENCES Student(SID),
+    FOREIGN KEY (BID) REFERENCES Book(BID)
+);
+
+-- DML:
+INSERT INTO Student VALUES (1, 'Alice', 'CS');
+INSERT INTO Student VALUES (2, 'Bob', 'IT');
+INSERT INTO Book VALUES (101, 'DBMS Concepts', 'Elmasri');
+INSERT INTO Book VALUES (102, 'Operating Systems', 'Silberschatz');
+INSERT INTO Issue VALUES (1001, 1, 101, '2024-05-01');
+INSERT INTO Issue VALUES (1002, 2, 102, '2024-05-02');
+
+-- 4. Access & Modify Data using Basic SQL:
+SELECT * FROM Student;
+UPDATE Student SET Name = 'Alicia' WHERE SID = 1;
+DELETE FROM Student WHERE SID = 2;
+
+-- 5. Aggregate Functions:
+SELECT COUNT(*) FROM Issue;
+SELECT MAX(IssueDate) FROM Issue;
+SELECT Department, COUNT(*) FROM Student GROUP BY Department;
+
+-- 6. Joins and Views:
+-- Join:
+SELECT S.Name, B.Title FROM Student S 
+JOIN Issue I ON S.SID = I.SID 
+JOIN Book B ON I.BID = B.BID;
+
+-- View:
+CREATE VIEW StudentIssues AS
+SELECT S.Name, B.Title, I.IssueDate 
+FROM Student S 
+JOIN Issue I ON S.SID = I.SID 
+JOIN Book B ON I.BID = B.BID;
+
+-- 7. Subqueries:
+SELECT Name FROM Student WHERE SID IN (SELECT SID FROM Issue WHERE BID = 101);
+
+-- 8. Triggers:
+DELIMITER //
+CREATE TRIGGER prevent_delete_book
+BEFORE DELETE ON Book
+FOR EACH ROW
+BEGIN
+    SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Cannot delete book with existing issues';
+END;//
+DELIMITER ;
+
+-- 9. Security and Authorization (MySQL-style):
+-- Run as root or DBA user
+CREATE USER 'libuser'@'localhost' IDENTIFIED BY 'libpass';
+GRANT SELECT, INSERT ON school.* TO 'libuser'@'localhost';
+REVOKE DELETE ON school.* FROM 'libuser'@'localhost';
+
+-- 10. Concurrency Control (Locks):
+-- Example (MySQL):
+START TRANSACTION;
+SELECT * FROM Book WHERE BID = 101 FOR UPDATE;
+-- Perform updates here
+COMMIT;
+
+-- 11. B-Trees / B+ Trees:
+-- Not implemented manually in SQL, but indexes are based on B-Trees:
+CREATE INDEX idx_sid ON Student(SID);
+CREATE INDEX idx_bid ON Book(BID);
+
+-- End of DBMS Practical Cheat Sheet using 'school' database
