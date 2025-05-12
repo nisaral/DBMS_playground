@@ -2,7 +2,7 @@
 
 There are many ways of storing data on a computer (text files, JSON files, CSV files, spreadsheets etc.). A relational database is a data storage system with the following properties:
 
-1. Data is stored in tables e.g., `customers`, `products`, `offices`, `employees`, etc..
+1. Data is stored in tables e.g., `customers`, `products`, `offices`, `employees`, etc
 2. Each table has a set of columns. Each column is used to store a specific type of data.
 3. Data is stored as rows (also called records) within database tables.
 4. Tables support CRUD operations on rows: Create, Read, Update and Delete
